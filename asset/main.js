@@ -54,26 +54,30 @@ slideBar.appendChild(firstItem);
 const allItems = $$(".slide-item");
 
 nextBtn.onclick = function () {
+  console.log("ckia");
   console.log(allItems.length);
   console.log(count);
   if (count > allItems.length - 1) return;
   slideBar.style.transform = `translateX(-${count * 100}%)`;
+  slideBar.style.transition = "transform 0.6s ease-in-out";
   count++;
 };
 previousBtn.onclick = function () {
   count--;
   if (count < 0) return;
   slideBar.style.transform = `translateX(-${count * 500}px)`;
+  slideBar.style.transition = "transform 0.6s ease-in-out";
 };
 slideBar.addEventListener("transitionend", () => {
   if (count > allItems.length - 1) {
     slideBar.style.transition = false;
     count = 0;
     slideBar.style.transform = `translateX(-${count * 100}%)`;
+
     setTimeout(() => {
-      slideBar.style.transform = `translateX(-${count * 100}%)`;
       slideBar.style.transition = "transform 0.6s ease-in-out";
-    }, 1000);
+    });
+    count++;
   }
   //   if (count < 0) {
   //     slideBar.style.transition = false;
