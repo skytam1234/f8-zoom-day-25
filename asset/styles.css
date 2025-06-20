@@ -137,3 +137,50 @@
   width: 35px;
   border: 5px solid #fff;
 }
+
+/*  checkAll */
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.content{
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 600px;
+  height: 700px;
+  border: 1px solid #000;
+}
+.check-all-wrapper{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 40px 0 10px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.check-all-wrapper input{
+  margin-right: 30px;
+  width: 30px;
+  height: 30px;
+}
+.list{
+  margin-left: calc( 50%);
+  transform: translateX(calc(-50% + 35px));
+
+}
+.list .row{
+  padding-bottom: 10px;
+}
+.list .row .item-checkbox{
+  padding: 0 15px;
+}
+.count{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

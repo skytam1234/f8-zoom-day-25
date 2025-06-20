@@ -39,8 +39,8 @@ function activeTabsByKey() {
     }
   });
 }
-
 document.body.addEventListener("keydown", activeTabsByKey);
+
 //Slide show
 const slideView = $(".slide-view");
 const slideBar = $(".slide-bar");
@@ -142,4 +142,6 @@ slideView.addEventListener('mouseleave',()=>{
     showSlideAuto();
   },3000);
 })
+
+
 
