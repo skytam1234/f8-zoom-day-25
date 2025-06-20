@@ -79,10 +79,11 @@
   justify-content: space-between;
   width: auto;
   height: 100%;
-  /* transition: transform 0.6s ease-in-out; */
+  transform: translateX(-100%);
 }
 
 .slide-item {
+
   flex-shrink: 0;
   width: 500px;
   height: 100%;
@@ -113,4 +114,26 @@
 }
 .next-btn {
   right: 0;
+}
+.slide-around{
+  bottom: 5px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  gap: 8px;
+}
+.slide-around-item{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: red;
+}
+.slide-around .active{
+  height: 35px;
+  width: 35px;
+  border: 5px solid #fff;
 }
