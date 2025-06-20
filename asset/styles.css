@@ -1,9 +1,17 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 /* tabs */
+.tab-container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+}
 .tabs {
-  margin: 20px 0;
+  /* margin: 40px 0; */
+  padding: 40px 0;
 }
 .tab {
   position: relative;
@@ -151,31 +159,31 @@
   width: 600px;
   height: 700px;
   border: 1px solid #000;
+  padding: 20px;
 }
 .check-all-wrapper{
+  padding-top: 40px;
   display: flex;
   align-items: center;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 40px 0 10px 0;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  color: rgb(127, 136, 255);
+}
+.check-all-wrapper:hover {
+  color: #ccc;
 }
 .check-all-wrapper input{
-  margin-right: 30px;
-  width: 30px;
-  height: 30px;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
 }
-.list{
-  margin-left: calc( 50%);
-  transform: translateX(calc(-50% + 35px));
+.table-list{
+  width: 100%;
+  border: 1px solid #000;
+}
+.table-list td{
+  border: 1px solid #000;
+  font-size: 18px;
+  padding: 10px;
 
-}
-.list .row{
-  padding-bottom: 10px;
-}
-.list .row .item-checkbox{
-  padding: 0 15px;
 }
 .count{
   font-size: 18px;
@@ -183,4 +191,47 @@
   margin-top: 20px;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+.table-list thead td{
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+  background: #ccc;
+}
+.item-checkbox,#checkAll{
+  box-shadow: 2px 3px 4px #ccc;
+}
+/* index */
+.card-container{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+height: 100vh;
+flex-wrap: wrap;
+gap: 10px;
+}
+.card-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 100px;
+height: 40px;
+border-radius:8px;
+box-shadow: 2px 3px 4px #ccc;
+color: rgb(239, 250, 215);
+background: #e2abab;
+cursor: pointer;
+}
+.card-block:hover{
+background: #17f835;
+}
+/* back home */
+.backHome{
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  z-index: 10000;
+  top: 0 ;
+
 }
