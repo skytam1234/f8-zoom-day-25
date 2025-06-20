@@ -18,7 +18,7 @@
   background: #fff;
   min-height: 50vh;
   min-width: 800px;
-  max-width: 100%;
+  max-width: 98%;
 }
 .tab-header {
   top: -30px;
@@ -91,7 +91,6 @@
 }
 
 .slide-item {
-
   flex-shrink: 0;
   width: 500px;
   height: 100%;
@@ -212,26 +211,30 @@ flex-wrap: wrap;
 gap: 10px;
 }
 .card-block{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-width: 100px;
-height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 200px;
+height: 80px;
 border-radius:8px;
 box-shadow: 2px 3px 4px #ccc;
 color: rgb(239, 250, 215);
 background: #e2abab;
 cursor: pointer;
+font-size: 24px;
+transition: all ease 1s;
 }
 .card-block:hover{
 background: #17f835;
 }
+.card-block:hover a{
+  color: #f81788;
+}
 /* back home */
 .backHome{
-  position: absolute;
+  position: absolute; 
   width: 150px;
   height: 40px;
   z-index: 10000;
-  top: 0 ;
-
+  top: 0 ;  
 }
