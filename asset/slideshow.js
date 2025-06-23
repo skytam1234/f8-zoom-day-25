@@ -52,11 +52,13 @@ slideBar.style.transition =`all ease ${duration}s`;
 nextBtn.onclick=function(){
     this.style.display='none';
     setTimeout(()=>{this.style.display='block';},duration*1000)
+    if(currentIndex>slideItems.length) return;
     handleMoving(true);
     activeAround();
 };
 previousBtn.onclick=function(){
     this.style.display='none';
+    if(currentIndex<=0) return;
     setTimeout(()=>{this.style.display='block';},duration*1000)
     handleMoving(false)
     activeAround();
